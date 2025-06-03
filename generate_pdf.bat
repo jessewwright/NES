@@ -1,0 +1,3 @@
+@echo off
+pandoc draft.md -o draft.pdf --pdf-engine=xelatex --bibliography=references.bib --citeproc --csl=apa.csl --metadata link-citations=true --metadata reference-section-title=References
+pause

@@ -1,0 +1,27 @@
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.6;
+  font-size: 11pt;
+}
+
+@media print {
+  body {
+    font-size: 10pt;
+  }
+}
+
+.math {
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+.equation {
+  text-align: center;
+  margin: 1em 0;
+  font-family: "Cambria Math", "Latin Modern Math", serif;
+}
+
+code, pre {
+  font-family: "Consolas", "Courier New", monospace;
+}

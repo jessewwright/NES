@@ -1,0 +1,29 @@
+\usepackage{fontspec}
+\setmainfont{Libertinus Serif} % Beautiful, scholarly, and open-source
+
+\usepackage{unicode-math}
+\setmathfont{Libertinus Math}
+
+\usepackage{microtype} % Improves spacing subtly
+
+% Clean, academic section styling
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape}{\thesubsubsection}{1em}{}
+
+% Nicer spacing in itemize/enumerate
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=4pt, topsep=6pt}
+\setlist[enumerate]{itemsep=4pt, topsep=6pt}
+
+% Slight line spacing tweak
+\linespread{1.07}
+
+% Optional: turn off bold math in bold paragraphs (LaTeX default is ugly)
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
