@@ -1,0 +1,21 @@
+name: nes
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - seaborn
+  - hddm
+  - pymc
+  - arviz
+  - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+      - sbi             # For NPE inference
+      - pyabc           # For ABC-SMC
+      - sbibm           # Optional: benchmarking tools
